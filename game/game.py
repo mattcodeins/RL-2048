@@ -104,7 +104,7 @@ class Game:
             if x == prev:
                 new_row[i] = x*2
                 prev = None
-                self.score += new_row[i]*(int(math.log2(new_row[i]))-1)
+                self.score += new_row[i]
                 self.fill -= 1
                 i += 1    
             elif x:
